@@ -1,7 +1,13 @@
 pipeline {
     agent any
     
-    stages {
+    stages {        
+       stage('build') {
+            steps {
+                echo "Hello World!"
+            }
+        }
+
         stage('Fetch dependencies') {
             steps {
                 sh 'sudo docker pull karthequian/helloworld:latest'
