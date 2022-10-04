@@ -31,8 +31,8 @@ pipeline {
             docker image to our OCI private Registry*/
         steps {
             sh "sudo docker login -u 'orasenatdpltintegration01/identitycloudservice/drew.walczyk@oracle.com' -p 'Q2{p4Z8T3#l6SHUM(HCg' iad.ocir.io"
-            sh "sudo docker tag customapp-dwalczyk:1 iad.ocir.io/orasenatdpltintegration01/customapp-dwalczyk:custom"
-            sh 'sudo docker push iad.ocir.io/orasenatdpltintegration01/customapp-dwalczyk:custom'
+            sh "sudo docker tag customapp:1 iad.ocir.io/orasenatdpltintegration01/cloud-engineering/dwalczyk/customapp:custom"
+            sh 'sudo docker push iad.ocir.io/orasenatdpltintegration01/cloud-engineering/dwalczyk/customapp:custom'
             
            }
          } 
