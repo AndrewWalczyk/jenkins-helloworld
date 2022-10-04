@@ -4,7 +4,7 @@ pipeline {
         
        stage('build') {
             steps {
-                echo "Hello Back pocket demo!!!"
+                echo "Hello World"
             }
         }
 
