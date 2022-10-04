@@ -9,6 +9,7 @@ pipeline {
 
         stage('Fetch dependencies') {
             steps {
+                sh 'sudo apt get install docker'
                 sh 'sudo docker pull karthequian/helloworld:latest'
           }
         }
